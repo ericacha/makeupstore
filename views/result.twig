@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Erica's Beauty Wholesale</title>
+</head>
+
+<body>
+    <div class='container'>
+        <h1>Your search results:</h1>
+        {% if products is empty %}
+        <p>No products match your search.</p>
+        {% endif %}
+
+        {% for product in products %}
+        <div class='row'>
+               <div class='col-md-6'>
+                    <img src="{{ product.getMakeupCover }}">
+               </div>
+               <div class='col-md-6'>
+                   <p> {{ product.getName }} </p>
+                   <p> {{ product.getType}} </p>
+                   <p>${{ product.getPrice }} </p>
+                   <p>By {{ product.getBrandType }} </p>
+                </div>
+        </div>
+        {% endfor %}
+    </div>
+    <form action="/">
+        <button type="submit" class="btn-success">Go Home</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+    <title>Erica's Beauty Wholesale</title>
+</head>
+
+<body>
+    <div class='container'>
+        <h1>Beauty Product added!</h1>
+        <div class='row'>
+               <div class='col-md-6'>
+                   <img src="{{ product.getMakeupCover }}">
+               </div>
+               <div class='col-md-6'>
+                    <p> {{ product.getName }} </p>
+                    <p> {{ product.getType}} </p>
+                    <p>${{ product.getPrice }} </p>
+                    <p>By {{ product.getBrandType }} </p>
+
+                </div>
+        </div>
+    </div>
+    <form action="/makeupInput">
+        <button type="submit" class="btn-success">Add New</button>
+    </form>
+    <form action="/">
+        <button type="submit" class="btn-success">Go Home</button>
+    </form>
+</body>
+</html>

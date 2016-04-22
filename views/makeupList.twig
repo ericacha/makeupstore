@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+      <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Erica's Beauty Wholesale</title>
+</head>
+
+<body>
+    <div class='container'>
+        <h1>Erica's Beauty Wholesale</h1>
+        <div class='container'>
+            <h3>Search By Makeup Type</h3>
+            <form action="/result">
+                    <label for="type">Enter Type:</label>
+                    <input id="type" name="type" placeholder="Ex.) Eye Shadow" class="form-control" type="text">
+                </div><br>
+                <button type="submit" class="btn btn-info">Submit</button>
+            </form>
+        </div>
+        <br>
+
+
+
+        <center>
+        <h1>Makeup Products</h1>
+        {% for product in makeups %}
+        <div class='row'>
+               <div class='col-md-6'>
+                   <img src="{{ product.getMakeupCover }}">
+               </div>
+               <div class='col-md-6'>
+                   <p> {{ product.getName }} </p>
+                   <p> {{ product.getType}} </p>
+                   <p>${{ product.getPrice }} </p>
+                   <p>By {{ product.getBrandType }} </p>
+                </div>
+        </div>
+        {% endfor %}
+        </center
+    </div>
+    <center>
+    <form action="/makeupInput">
+        <button type="submit" class="btn btn-success">Add New Product</button>
+    </form>
+    </center
+
+</body>
+</html>
