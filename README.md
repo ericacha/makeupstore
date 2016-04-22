@@ -1,6 +1,7 @@
-# CD Store
+# Beauty Wholesale Store
 ## April 2016 | Erica Cha
-### Program for users to catalog and organize CDs. Uses session vars to keep track of the CDs that have been added.
+### Program for users to catalog and organize beauty products. Features include to search product by product type and shows a listing and to add new products. 
+
 #### Technologies: PHP, Silex, Twig
 
 #### Setup Instructions
