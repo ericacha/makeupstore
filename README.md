@@ -7,8 +7,8 @@
 
 #### Setup Instructions
 
-- clone this repository on terminal,https://github.com/ericacha/makeup_store.git
-- in the terminal, change directory to "web" folder
+- clone this repository onto desktop using terminal, https://github.com/ericacha/makeup_store.git
+- change directory to "web" folder
 - in the terminal type in,  php -S localhost:8000
 - open browser and type in, localhost:8000
 - browser will open this app directly :)
