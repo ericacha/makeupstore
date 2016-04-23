@@ -3,10 +3,4 @@
         "silex/silex": "~1.1",
         "twig/twig": "~1.0"
     }
-},
-{
-
-  "require-dev": {
-    "heroku/heroku-buildpack-php": "*"
-  }
 }
