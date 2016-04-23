@@ -11,6 +11,6 @@
 - change directory to the files "web" folder
 - in the terminal type in,  php -S localhost:8000
 - open browser and type in, localhost:8000
-- browser will open this app directly :)
+- browser will open this app directly 
 
 #### Licence: MIT
