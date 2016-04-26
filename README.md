@@ -11,6 +11,9 @@
 - change directory to the files "web" folder
 - in the terminal type in,  php -S localhost:8000
 - open browser and type in, localhost:8000
-- browser will open this app directly 
+- browser will open this app directly
+
+- see live website here uploaded through Heroku, https://makeupapp.herokuapp.com/
+- (Note - inorder to upload from Heroku, must add file names Procfile, .htaccess and adjust .json file)
 
 #### Licence: MIT
